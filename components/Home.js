@@ -46,7 +46,7 @@ export default class Home extends React.Component {
 	        	{this.state.question}
 	        </p>
 
-	        <div className="grid" onClick={this.state.toggle ? () => this.resetQuestion() : () => this.fetchAnswer()}>
+	        <div className="grid clickk" onClick={this.state.toggle ? () => this.resetQuestion() : () => this.fetchAnswer()}>
 	          <a className="card">
 	            <h3>{this.state.toggle ? "Reset Question" : "Answer"}</h3>
 	          </a>
@@ -129,6 +129,10 @@ export default class Home extends React.Component {
 	        .description {
 	          line-height: 1.5;
 	          font-size: 1.5rem;
+	        }
+
+	        .clickk {
+	        	cursor: pointer
 	        }
 
 	        code {
